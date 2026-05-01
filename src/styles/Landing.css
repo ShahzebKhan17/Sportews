@@ -7,6 +7,7 @@
 
 /* Full screen section */
 .landing {
+  position: relative;  
   width: 100%;
   height: 100vh;
   background: url('../assets/sportews-bg.png') no-repeat center center;
@@ -15,6 +16,10 @@
 
 /* Overlay */
 .overlay {
+  position: absolute;   
+  top: 0;
+  left: 0;
+
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.6);
@@ -26,6 +31,8 @@
 
 /* Content */
 .content {
+  position: relative;   /* ✅ ADD THIS */
+  z-index: 2;
   text-align: center;
   color: white;
   padding: 20px;

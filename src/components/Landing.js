@@ -9,7 +9,9 @@ class Landing extends Component {
           <div className="content">
             <h1>SPORTEWS</h1>
             <p>All Sports. All News. All Here.</p>
-            <button className="btn">Explore News</button>
+            <button className="btn" onClick={this.props.goToSports}>
+  Explore News
+</button>
           </div>
         </div>
       </div>
