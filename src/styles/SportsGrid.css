@@ -36,15 +36,15 @@
   padding: 5px;
   margin-bottom: 5px;
   width: 80%;
-  background-color: rgb(32, 2, 38);
+  background-color: rgb(222, 155, 234);
 }
 
 .search-card button {
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 10px;
-  background-color:rgb(156, 114, 228);
+  background-color:rgb(166, 143, 224);
 }
 body {
-  background-color: rgb(23, 4, 55);
+  background-color: rgb(14, 5, 33);
 }

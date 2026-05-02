@@ -2,23 +2,16 @@
   text-align: center;
 }
 
-/* REMOVE landing from here ❌ */
-/* Keep landing styles ONLY in Landing.css */
-
-/* Logo (optional) */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-/* Animation */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-/* Header (optional) */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -28,12 +21,10 @@
   justify-content: center;
 }
 
-/* Link */
 .App-link {
   color: #61dafb;
 }
 
-/* Animation keyframes */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -43,7 +34,6 @@
   }
 }
 
-/* 🔽 Mobile fixes (keep separate) */
 @media (max-width: 768px) {
   .hero-text {
     font-size: 18px;

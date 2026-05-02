@@ -1,7 +1,5 @@
-import React, { Component } from 'react';
-import '../styles/SportsGrid.css';
-
-
+import React, { Component } from "react";
+import "../styles/SportsGrid.css";
 class SportsGrid extends Component {
   constructor() {
     super();
@@ -9,17 +7,14 @@ class SportsGrid extends Component {
       sports: [
         "Football", "Cricket", "Tennis", "Basketball",
         "Hockey", "Baseball", "Badminton", "Kabaddi",
-        "Formula 1", "Wrestling", "Golf"
+        "Volleyball", "Wrestling", "Golf"
       ],
       search: ""
     };
   }
 
   handleClick = (sport) => {
-    console.log("Selected sport:", sport);
-
-    // 👉 later you can navigate or fetch API here
-    // example: this.props.navigate(`/news/${sport}`)
+    this.props.goToNews(sport);
   };
 
   handleSearchChange = (e) => {
@@ -27,12 +22,12 @@ class SportsGrid extends Component {
   };
 
   handleSearchSubmit = () => {
-    console.log("Search sport:", this.state.search);
+    this.props.goToNews(this.state.search);
   };
 
   render() {
     return (
-      <div className="grid-container mt-5" style={{ marginTop: "5vh",padding: "50px" }}>
+      <div className="grid-container mt-5" style={{ marginTop: "5vh", padding: "50px" }}>
 
         {this.state.sports.map((sport, index) => (
           <div
@@ -44,7 +39,6 @@ class SportsGrid extends Component {
           </div>
         ))}
 
-        {/* 🔍 Last Card - Search */}
         <div className="card search-card">
           <input
             type="text"
@@ -59,5 +53,4 @@ class SportsGrid extends Component {
     );
   }
 }
-
 export default SportsGrid;
