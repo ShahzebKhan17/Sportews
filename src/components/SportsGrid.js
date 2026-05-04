@@ -27,6 +27,15 @@ class SportsGrid extends Component {
 
   render() {
     return (
+
+      <div className="container">
+      <button 
+        className="btn btn-secondary mt-3 mb-3"
+        onClick={this.props.goBack}
+      >
+        ← Back
+      </button>
+
       <div className="grid-container mt-5" style={{ marginTop: "5vh", padding: "50px" }}>
 
         {this.state.sports.map((sport, index) => (
@@ -48,7 +57,7 @@ class SportsGrid extends Component {
           />
           <button onClick={this.handleSearchSubmit}>PLAY</button>
         </div>
-
+     </div>
       </div>
     );
   }
